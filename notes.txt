@@ -1,0 +1,11 @@
+Todo:
+
+code: check why it should not be cross platform? -> I am not cheking for 32 / 64 bit architecture
+      change to consistend call by reference design and return error as int
+      clean up and check
+      write example code
+
+Makefile: write it
+
+doc
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
