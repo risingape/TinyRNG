@@ -173,19 +173,58 @@ uint32_t gammarnd32(uint32_t (*u)(uint32_t *, uint32_t *), uint32_t *seeds, floa
 uint32_t gammarnd64(uint32_t (*u)(uint32_t *, uint64_t *), uint32_t *seeds, double* sample, double* u2, double alpha, double beta);
 
 
-// binomial random sample with number of trail n and probability p
+/*************************************************************************************************************
+ * binomial random samples with number of trail n and probability p
+ *
+ * for small values of n < the sum of n Bernoulli trials is computed
+ * References:
+ * Knuth, D. E., "Art of Computer Programming - Seminumerical Algorithms",
+ * Addison-Wesley, 1997, Vol. 2
+ *
+ * Devroye, L., "Non-uniform Random Variate Generation", Springer-Verlag, New York, Inc., 1986
+ *
+ * for larger values of n, 10 < n < 100 the geometric version by Devroye (1980) is used.
+ * Refrence:
+ * Devroye, L. "Generating the maximum of independent identically distributed random variables", 
+ * Computers & Mathematics with Applications, 1980, 6, 305 - 315
+ *
+ * For certain parameter regions, n > 20 and n*p < 0.05, the binomial distribution may be approximated by the
+ * normal distribution N(n*p, sqrt(n*p*(1-p)))
+ *
+ ************************************************************************************************************/
 
-// internal only
+/*
+ * Geometric method by Devroye(1980), for internal use only. This method is actually called by  binomialrnd32 and binomialrnd64.
+ */
 uint32_t geometricMethod32(uint32_t (*u)(uint32_t *, uint32_t *), uint32_t *seeds, uint32_t *sample, float n, float p);
 uint32_t geometricMethod64(uint32_t (*u)(uint32_t *, uint64_t *), uint32_t *seeds, int64_t *sample, double n, double p);
 
-// this one should be used
+/*
+ * Binomial random samples
+ */
 uint32_t binomialrnd32(uint32_t (*u)(uint32_t *, uint32_t *), uint32_t *seeds, int32_t *sample, float *u2, uint32_t n, float p);
 uint32_t binomialrnd64(uint32_t (*u)(uint32_t *, uint64_t *), uint32_t *seeds, int64_t *sample, double *u2, uint64_t n, double p);
 
 
 
-// Poisson random sample with mean lambda
+/*******************************************************************************************************************
+ * Poisson random samples with mean lambda.
+ *
+ * For small values of lambda < 30 use the multiplicative method.
+ * References:
+ * Knuth, D. E., "Art of Computer Programming - Seminumerical Algorithms",
+ * Addison-Wesley, 1997, Vol. 2
+ *
+ * Devroye, L., "Non-uniform Random Variate Generation", Springer-Verlag, New York, Inc., 1986
+ *
+ * If 30 < lambda <= 100 rejection sampling is used.
+ * Reference:
+ * Atkinson, A. C., "The Computer Generation of Poisson Random Variables", Journal of the Royal Statistical Society.
+ * Series C (Applied Statistics), Blackwell Publishing for the Royal Statistical Society, 1979, 28, pp. 29-35
+ *
+ * For large values of lambda > 100 the Poisson distribution is approximated by the normal distribution  using the 
+ * central limit theorem (CLT)
+ *******************************************************************************************************************/
 
 // internal only
 float logFactorial32(float N);
@@ -201,8 +240,12 @@ uint32_t poissRejection64(uint32_t (*u)(uint32_t *, uint64_t *), uint32_t *seeds
 uint32_t poissrnd32(uint32_t (*u)(uint32_t *, uint32_t *), uint32_t *seeds, float* sample, float* u2, float lambda);
 uint32_t poissrnd64(uint32_t (*u)(uint32_t *, uint64_t *), uint32_t *seeds, double* sample, double* u2, double lambda);
 
-
-// beta random sample
+/*
+ * Beta distributed random samples are computed by rejection sampling using Cheng's rejection algorithm BA (Cheng1978).
+ *
+ * Reference:
+ * Cheng, R. C. H., "Generating Beta Variates with Nonintegral Shape Parameters", Communications of the ACM, 1978, 21(4), 317-322.
+ */
 uint32_t betarnd32(uint32_t (*u)(uint32_t *, uint32_t *), uint32_t *seeds, float *sample, float alpha, float beta);
 uint32_t betarnd64(uint32_t (*u)(uint32_t *, uint64_t *), uint32_t *seeds, double *sample, double alpha, double beta);
 
