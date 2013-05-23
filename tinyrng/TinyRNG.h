@@ -15,7 +15,7 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+ *  along with TinyRNG.  If not, see <http://www.gnu.org/licenses/>.
  *************************************************************************/
 
 
@@ -30,8 +30,8 @@
  *     - 32 / 64-bit awareness
  *     - easy to extend by your own RNGs and transformations
  *
- * What TiniRNG is not:
- * Tiny RNG is not a full blown replacement for a tried and proven RNG library,
+ * What TinyRNG is not:
+ * TinyRNG is not a full blown replacement for a tried and proven RNG library,
  * Cross platform, I developed it on Linux and never tried it elsewhere,
  * Complete set of distributions - I will add transformations for other 
  * distributions over time. However, suggestions are very welcome!
