@@ -1,0 +1,7278 @@
+
+guido@linux-9cge:~/scratch/dphil/testU01> gcc xorshift_test.c -o xorshift_test -ltestu01 -lprobdist -lm 
+guido@linux-9cge:~/scratch/dphil/testU01> ./xorshift_test 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting SmallCrush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,    d = 1073741824,    t = 2,    p = 1
+
+
+      Number of cells = d^t = 1152921504606846976
+      Lambda = Poisson mean =      27.1051
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :      27.11
+Total observed number                 :      28
+p-value of test                       :    0.46
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:01.49
+
+Generator state:
+
+
+
+
+***********************************************************
+Test sknuth_Collision calling smultin_Multinomial
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   d = 65536,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =         4294967296
+       Expected number per cell =  1 /  858.99346
+       EColl = n^2 / (2k) =  2910.383046
+       Hashing =   TRUE
+
+       Collision test,    Mu =      2909.2534,    Sigma =    53.8957
+
+-----------------------------------------------
+Test Results for Collisions
+
+Expected number of collisions = Mu    :     2909.25
+Observed number of collisions         :     2776
+p-value of test                       :    0.9934
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :       4289970072
+  j =  1                              :          4994448
+  j =  2                              :             2776
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:01.25
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 200000,  r = 22,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1114
+Chi-square statistic                  : 1105.92
+p-value of test                       :    0.56
+
+-----------------------------------------------
+CPU time used                    :  00:00:00.71
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 400000,  r = 24,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   19
+Chi-square statistic                  :   12.65
+p-value of test                       :    0.86
+
+-----------------------------------------------
+CPU time used                    :  00:00:00.64
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 500000,  r = 26,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   44
+Chi-square statistic                  :   43.71
+p-value of test                       :    0.48
+
+-----------------------------------------------
+CPU time used                    :  00:00:00.54
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  0,   d = 100000,   t =  6
+
+      Number of categories = 100000
+      Expected number per category  = 20.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  : 1.00e+5
+p-value of test                       :    0.17
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.87
+p-value of test                       :    0.13
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:01.20
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 200000,  r = 27,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   41
+Chi-square statistic                  :   29.64
+p-value of test                       :    0.91
+
+-----------------------------------------------
+CPU time used                    :  00:00:00.73
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 20000,  r = 20,    s = 10,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    2.95
+p-value of test                       :    0.40
+
+-----------------------------------------------
+CPU time used                    :  00:00:00.61
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 500000,  r = 20,   s = 10,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 2209
+Chi-square statistic                  : 2100.04
+p-value of test                       :    0.95
+
+-----------------------------------------------
+CPU time used                    :  00:00:00.75
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r =  0,   s = 30,   L0 =  150,   L1 =  150
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   52
+ChiSquare statistic                   :   42.92
+p-value of test                       :    0.81
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   52
+ChiSquare statistic                   :   46.33
+p-value of test                       :    0.70
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   75
+ChiSquare statistic                   :   59.59
+p-value of test                       :    0.90
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   44
+ChiSquare statistic                   :   48.60
+p-value of test                       :    0.29
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   26
+ChiSquare statistic                   :   27.13
+p-value of test                       :    0.40
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:01.08
+
+Generator state:
+
+
+
+
+
+========= Summary results of SmallCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        xorshift
+ Number of statistics:  15
+ Total CPU time:   00:00:09.07
+
+ All tests were passed
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   d = 4096,   t =  2,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   29.802322
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.01677312,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16773120
+Value of the statistic                : 1.68e+7
+p-value of test                       :    0.90
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:59.37
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   d =   64,   t =  4,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   17.881393
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =    0.027525119,    Sigma =          1
+
+
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+guido@linux-9cge:~/scratch/dphil/testU01> top
+
+top - 20:30:35 up  4:34,  7 users,  load average: 0.90, 0.39, 0.18
+Tasks: 172 total,   2 running, 170 sleeping,   0 stopped,   0 zombie
+Cpu(s): 25.3%us,  0.1%sy,  0.0%ni, 74.6%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8193248k total,  2881820k used,  5311428k free,    74188k buffers
+Swap:        0k total,        0k used,        0k free,   867204k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S   %CPU %MEM    TIME+  COMMAND                  
+17646 guido     20   0  235m 223m  988 R    100  2.8   2:18.31 xorshift_test             
+ 2927 guido     20   0 1751m 914m  39m S      1 11.4   5:33.84 firefox-bin               
+   12 root      RT   0     0    0    0 S      0  0.0   0:00.04 watchdog/1                
+    1 root      20   0 37396 4648 2004 S      0  0.1   0:01.11 systemd                   
+    2 root      20   0     0    0    0 S      0  0.0   0:00.00 kthreadd                  
+    3 root      20   0     0    0    0 S      0  0.0   0:00.43 ksoftirqd/0               
+    6 root      RT   0     0    0    0 S      0  0.0   0:00.00 migration/0               
+    7 root      RT   0     0    0    0 S      0  0.0   0:00.02 watchdog/0                
+    8 root      RT   0     0    0    0 S      0  0.0   0:00.00 migration/1               
+   10 root      20   0     0    0    0 S      0  0.0   0:00.02 ksoftirqd/1               
+   11 root      20   0     0    0    0 S      0  0.0   0:05.05 kworker/0:1               
+   13 root      RT   0     0    0    0 S      0  0.0   0:00.00 migration/2               
+   15 root      20   0     0    0    0 S      0  0.0   0:00.04 ksoftirqd/2               
+   16 root      RT   0     0    0    0 S      0  0.0   0:00.01 watchdog/2                
+   17 root      RT   0     0    0    0 S      0  0.0   0:00.00 migration/3               
+   19 root      20   0     0    0    0 S      0  0.0   0:00.09 ksoftirqd/3               
+   20 root      RT   0     0    0    0 S      0  0.0   0:00.04 watchdog/3                
+   21 root       0 -20     0    0    0 S      0  0.0   0:00.00 cpuset                    
+   22 root       0 -20     0    0    0 S      0  0.0   0:00.00 khelper                   
+   23 root      20   0     0    0    0 S      0  0.0   0:00.00 kdevtmpfs                 
+   24 root       0 -20     0    0    0 S      0  0.0   0:00.00 netns                     
+   25 root      20   0     0    0    0 S      0  0.0   0:00.02 sync_supers               
+   26 root      20   0     0    0    0 S      0  0.0   0:00.00 bdi-default               
+   27 root       0 -20     0    0    0 S      0  0.0   0:00.00 kintegrityd               
+   28 root       0 -20     0    0    0 S      0  0.0   0:00.00 kblockd                   
+   29 root       0 -20     0    0    0 S      0  0.0   0:00.00 ata_sff                   
+   30 root       0 -20     0    0    0 S      0  0.0   0:00.00 md                        
+   31 root      20   0     0    0    0 S      0  0.0   0:01.32 kworker/1:1               
+   32 root      20   0     0    0    0 S      0  0.0   0:01.07 kworker/2:1               
+   33 root      20   0     0    0    0 S      0  0.0   0:06.26 kworker/3:1               
+   34 root      20   0     0    0    0 S      0  0.0   0:00.00 khungtaskd                
+   35 root      20   0     0    0    0 S      0  0.0   0:00.00 kswapd0                   
+   36 root      25   5     0    0    0 S      0  0.0   0:00.00 ksmd                      
+   37 root      39  19     0    0    0 S      0  0.0   0:01.52 khugepaged                
+   38 root      20   0     0    0    0 S      0  0.0   0:00.00 fsnotify_mark             
+   39 root       0 -20     0    0    0 S      0  0.0   0:00.00 crypto                    
+   43 root       0 -20     0    0    0 S      0  0.0   0:00.00 kthrotld                  
+   44 root      20   0     0    0    0 S      0  0.0   0:00.00 scsi_eh_0                 
+   45 root      20   0     0    0    0 S      0  0.0   0:00.00 scsi_eh_1                 
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare:
+       Delta =     1,    Mu =    0.027525119,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16515072
+Value of the statistic                : 1.65e+7
+p-value of test                       :    0.50
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:36.20
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 1048576,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      461
+p-value of test                       :    0.39
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278221
+  j =  1                              :         99999078
+  j =  2                              :              461
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:38.15
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 10,   d = 1048576,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+top - 20:34:53 up  4:38,  7 users,  load average: 1.01, 0.76, 0.38
+Tasks: 172 total,   2 running, 170 sleeping,   0 stopped,   0 zombie
+Cpu(s): 25.4%us,  0.1%sy,  0.0%ni, 74.5%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8193248k total,  3104744k used,  5088504k free,    74356k buffers
+Swap:        0k total,        0k used,        0k free,   867176k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S   %CPU %MEM    TIME+  COMMAND                  
+17646 guido     20   0  441m 429m  988 R    100  5.4   6:37.03 xorshift_test             
+ 2192 guido     20   0  511m  27m  12m S      1  0.3   0:03.91 gnome-do                  
+ 2927 guido     20   0 1752m 924m  39m S      1 11.6   5:36.44 firefox-bin               
+ 1623 mysql     20   0  394m  43m 5016 S      0  0.5   0:03.04 mysqld                    
+17653 guido     20   0 17276 1380  972 R      0  0.0   0:00.54 top                       
+    1 root      20   0 37396 4648 2004 S      0  0.1   0:01.11 systemd                   
+    2 root      20   0     0    0    0 S      0  0.0   0:00.00 kthreadd                  
+    3 root      20   0     0    0    0 S      0  0.0   0:00.43 ksoftirqd/0               
+    6 root      RT   0     0    0    0 S      0  0.0   0:00.00 migration/0               
+    7 root      RT   0     0    0    0 S      0  0.0   0:00.02 watchdog/0                
+    8 root      RT   0     0    0    0 S      0  0.0   0:00.00 migration/1               
+   10 root      20   0     0    0    0 S      0  0.0   0:00.02 ksoftirqd/1               
+   11 root      20   0     0    0    0 S      0  0.0   0:05.10 kworker/0:1               
+   12 root      RT   0     0    0    0 S      0  0.0   0:00.04 watchdog/1                
+   13 root      RT   0     0    0    0 S      0  0.0   0:00.00 migration/2               
+   15 root      20   0     0    0    0 S      0  0.0   0:00.04 ksoftirqd/2               
+   16 root      RT   0     0    0    0 S      0  0.0   0:00.01 watchdog/2                
+   17 root      RT   0     0    0    0 S      0  0.0   0:00.00 migration/3               
+   19 root      20   0     0    0    0 S      0  0.0   0:00.09 ksoftirqd/3               
+   20 root      RT   0     0    0    0 S      0  0.0   0:00.04 watchdog/3                
+   21 root       0 -20     0    0    0 S      0  0.0   0:00.00 cpuset                    
+   22 root       0 -20     0    0    0 S      0  0.0   0:00.00 khelper                   
+   23 root      20   0     0    0    0 S      0  0.0   0:00.00 kdevtmpfs                 
+   24 root       0 -20     0    0    0 S      0  0.0   0:00.00 netns                     
+   25 root      20   0     0    0    0 S      0  0.0   0:00.02 sync_supers               
+   26 root      20   0     0    0    0 S      0  0.0   0:00.00 bdi-default               
+   27 root       0 -20     0    0    0 S      0  0.0   0:00.00 kintegrityd               
+   28 root       0 -20     0    0    0 S      0  0.0   0:00.00 kblockd                   
+   29 root       0 -20     0    0    0 S      0  0.0   0:00.00 ata_sff                   
+   30 root       0 -20     0    0    0 S      0  0.0   0:00.00 md                        
+   31 root      20   0     0    0    0 S      0  0.0   0:01.34 kworker/1:1               
+   32 root      20   0     0    0    0 S      0  0.0   0:01.10 kworker/2:1               
+   33 root      20   0     0    0    0 S      0  0.0   0:06.35 kworker/3:1               
+   34 root      20   0     0    0    0 S      0  0.0   0:00.00 khungtaskd                
+   35 root      20   0     0    0    0 S      0  0.0   0:00.00 kswapd0                   
+   36 root      25   5     0    0    0 S      0  0.0   0:00.00 ksmd                      
+   37 root      39  19     0    0    0 S      0  0.0   0:01.53 khugepaged                
+   38 root      20   0     0    0    0 S      0  0.0   0:00.00 fsnotify_mark             
+   39 root       0 -20     0    0    0 S      0  0.0   0:00.00 crypto                    
+p-value of test                       :    0.37
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278222
+  j =  1                              :         99999076
+  j =  2                              :              462
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:49.50
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d =    4,   t = 20,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.74
+Observed number of collisions         :      485
+p-value of test                       :    0.08
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278245
+  j =  1                              :         99999030
+  j =  2                              :              485
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:48.50
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 28,   d =    4,   t = 20,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.74
+Observed number of collisions         :      452
+p-value of test                       :    0.54
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278212
+  j =  1                              :         99999096
+  j =  2                              :              452
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:49.26
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 2147483648,    t = 2,    p = 1
+
+
+      Number of cells = d^t = 4611686018427387904
+      Lambda = Poisson mean =     433.6809
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    2168.40
+Total observed number                 :    2237
+p-value of test                       :    0.07
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:31.42
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 2097152,    t = 3,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    1084.20
+Total observed number                 :    1048
+p-value of test                       :    0.86
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:32.66
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 65536,    t = 4,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     542.10
+Total observed number                 :     534
+p-value of test                       :    0.63
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:33.84
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r =  0,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     650.52
+Total observed number                 :     626
+p-value of test                       :    0.83
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.64
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r =  7,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     650.52
+Total observed number                 :     611
+p-value of test                       :    0.94
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:24.42
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r = 14,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     325.26
+Total observed number                 :     303
+p-value of test                       :    0.89
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.36
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r = 22,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     325.26
+Total observed number                 :     343
+p-value of test                       :    0.17
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.29
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 2000000,  r =  0,  t = 2,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.24
+p-value of test                       :    0.97
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    0.45
+p-value of test                       :    0.80
+
+Test on the Nm values of W_{n,i}(mNP1):    2.22
+p-value of test                       :    0.07
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :     318
+p-value of test                       :    0.16
+
+Stat. AD (mNP2)                       :    0.69
+p-value of test                       :    0.57
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.08
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 2000000,  r =  0,  t = 3,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.75
+p-value of test                       :    0.51
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    1.51
+p-value of test                       :    0.17
+
+Test on the Nm values of W_{n,i}(mNP1):    0.47
+p-value of test                       :    0.77
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :     303
+p-value of test                       :    0.44
+
+Stat. AD (mNP2)                       :    0.82
+p-value of test                       :    0.46
+
+Stat. AD after spacings (mNP2-S)      :    0.35
+p-value of test                       :    0.90
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.15
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N =  5,  n = 2000000,  r =  0,  t = 7,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.25
+p-value of test                       :    0.97
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    1.02
+p-value of test                       :    0.35
+
+Test on the Nm values of W_{n,i}(mNP1):    1.17
+p-value of test                       :    0.28
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     150
+Number of jumps of Y                  :     167
+p-value of test                       :    0.09
+
+Stat. AD (mNP2)                       :    0.55
+p-value of test                       :    0.70
+
+Stat. AD after spacings (mNP2-S)      :    0.59
+p-value of test                       :    0.66
+
+-----------------------------------------------
+CPU time used                    :  00:00:30.14
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+snpair_ClosePairsBitMatch test:
+-----------------------------------------------
+   N =  4,  n = 4000000,  r =  0,  t = 2
+
+
+-----------------------------------------------
+Max of all bit distances              :   21.00
+p-value of test                       :    0.84
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.00
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+snpair_ClosePairsBitMatch test:
+-----------------------------------------------
+   N =  2,  n = 4000000,  r =  0,  t = 4
+
+
+-----------------------------------------------
+Max of all bit distances              :   11.00
+p-value of test                       :    0.06
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.17
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r =  0,   d =   16,   k =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi-square statistic                  :    4.49
+p-value of test                       :    0.97
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.69
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 26,   d =   16,   k =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi-square statistic                  :   13.38
+p-value of test                       :    0.34
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.83
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   23
+Chi-square statistic                  :   22.33
+p-value of test                       :    0.50
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.11
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 24,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   23
+Chi-square statistic                  :   22.58
+p-value of test                       :    0.49
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.40
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r =  0,   d =    4
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   51
+Chi-square statistic                  :   44.04
+p-value of test                       :    0.74
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.05
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 28,   d =    4
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   51
+Chi-square statistic                  :   55.07
+p-value of test                       :    0.32
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.37
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   53.40
+p-value of test                       :    0.21
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.02
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 26,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   31.46
+p-value of test                       :    0.95
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.97
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   Alpha =        0,   Beta  =    0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  106
+Chi-square statistic                  :  107.45
+p-value of test                       :    0.44
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.90
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 27,   Alpha =        0,   Beta  =    0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  106
+Chi-square statistic                  :   98.81
+p-value of test                       :    0.68
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.26
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1936
+Chi-square statistic                  : 1935.27
+p-value of test                       :    0.50
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.49
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r = 22,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1936
+Chi-square statistic                  : 1944.11
+p-value of test                       :    0.44
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.09
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   Up =  TRUE
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    6
+Chi-square statistic                  :    8.23
+p-value of test                       :    0.22
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.96
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r = 15,   Up = FALSE
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    6
+Chi-square statistic                  :    3.76
+p-value of test                       :    0.71
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.23
+
+Generator state:
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    13.77866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.03628799,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                : 3.63e+6
+p-value of test                       :    0.60
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.73
+
+Generator state:
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r = 15,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    13.77866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.03628799,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                : 3.63e+6
+p-value of test                       :    0.49
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.47
+
+Generator state:
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r =  0,   t = 13,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =         6227020800
+       Expected number per cell =  1 /  622.70208
+       EColl = n^2 / (2k) =  8029.521918
+       Hashing =   TRUE
+
+       Collision test,    Mu =      8025.2245,    Sigma =    89.5098
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    40126.12
+Observed number of collisions         :    39869
+p-value of test                       :    0.90
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :      31085143869
+  j =  1                              :         49920283
+  j =  2                              :            39827
+  j =  3                              :               21
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:36.87
+
+Generator state:
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r = 15,   t = 13,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =         6227020800
+       Expected number per cell =  1 /  622.70208
+       EColl = n^2 / (2k) =  8029.521918
+       Hashing =   TRUE
+
+       Collision test,    Mu =      8025.2245,    Sigma =    89.5098
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    40126.12
+Observed number of collisions         :    40315
+p-value of test                       :    0.17
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :      31085144315
+  j =  1                              :         49919394
+  j =  2                              :            40267
+  j =  3                              :               24
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:39.18
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 100000,   t =  5
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.092
+p-value of test                       :    0.80
+
+Kolmogorov-Smirnov- statistic = D-    :    0.34
+p-value of test                       :    0.08
+
+Anderson-Darling statistic = A2       :    1.53
+p-value of test                       :    0.17
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 999990
+Chi-square statistic                  : 1.00e+6
+p-value of test                       :    0.16
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.16
+p-value of test                       :    0.55
+
+Kolmogorov-Smirnov- statistic = D-    :    0.15
+p-value of test                       :    0.60
+
+Anderson-Darling statistic = A2       :    0.37
+p-value of test                       :    0.87
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:00.39
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r =  0,   d = 100000,   t = 10
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.071
+p-value of test                       :    0.91
+
+Kolmogorov-Smirnov- statistic = D-    :    0.69
+p-value of test                       :  3.7e-3
+
+Anderson-Darling statistic = A2       :    4.80
+p-value of test                       :  4.0e-3
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 499995
+Chi-square statistic                  : 5.03e+5
+p-value of test                       :  5.0e-3
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.34
+p-value of test                       :    0.27
+
+Kolmogorov-Smirnov- statistic = D-    :    0.16
+p-value of test                       :    0.71
+
+Anderson-Darling statistic = A2       :    0.51
+p-value of test                       :    0.73
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:32.58
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d = 100000,   t = 20
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  : 1.00e+5
+p-value of test                       :    0.27
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.50
+p-value of test                       :    0.50
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.49
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d = 100000,   t = 30
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  :99819.06
+p-value of test                       :    0.66
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.45
+p-value of test                       :    0.55
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.44
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   t = 10
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.82
+p-value of test                       :    0.18
+
+-----------------------------------------------
+CPU time used                    :  00:00:04.13
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   t = 30
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :   0.079
+p-value of test                       :    0.92
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.36
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SampleMean test:
+-----------------------------------------------
+   N = 10000000,  n = 20,  r =  0
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 9.56e-5
+p-value of test                       :    0.83
+
+Kolmogorov-Smirnov- statistic = D-    : 4.02e-4
+p-value of test                       :    0.04
+
+Anderson-Darling statistic = A2       :    2.33
+p-value of test                       :    0.06
+
+-----------------------------------------------
+CPU time used                    :  00:00:19.83
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SampleCorr test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   k = 1
+
+
+-----------------------------------------------
+Normal statistic                      :    0.49
+p-value of test                       :    0.31
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.26
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 400000000,   r = 0,   s = 30,   L = 15
+
+   Sequences of n = (K + Q)L =   6150000000 bits
+   Q = 10000000 initialization blocks
+   K = 400000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.34
+p-value of test                       :    0.63
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.05
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 100000000,   r = 20,   s = 10,   L = 15
+
+   Sequences of n = (K + Q)L =   1650000000 bits
+   Q = 10000000 initialization blocks
+   K = 100000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.75
+p-value of test                       :    0.77
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.13
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  0,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   47.54
+p-value of test                       :    0.41
+
+-----------------------------------------------
+CPU time used                    :  00:00:05.01
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  8,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   40.05
+p-value of test                       :    0.72
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.22
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r = 16,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   27.13
+p-value of test                       :    0.99
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.24
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r = 24,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   48.26
+p-value of test                       :    0.38
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.24
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SumCollector test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,   g = 10
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   25
+Chi-square statistic                  :   22.46
+p-value of test                       :    0.61
+
+-----------------------------------------------
+CPU time used                    :  00:00:04.33
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r =  0,    s = 30,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    4
+Chi-square statistic                  :    8.98
+p-value of test                       :    0.06
+
+-----------------------------------------------
+CPU time used                    :  00:00:27.27
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,    s = 10,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    4
+Chi-square statistic                  :    1.59
+p-value of test                       :    0.81
+
+-----------------------------------------------
+CPU time used                    :  00:00:30.84
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 50000,  r =  0,    s = 30,    L = 300,    k = 300
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    3.74
+p-value of test                       :    0.29
+
+-----------------------------------------------
+CPU time used                    :  00:00:47.46
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 50000,  r = 20,    s = 10,    L = 300,    k = 300
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    3.28
+p-value of test                       :    0.35
+
+-----------------------------------------------
+CPU time used                    :  00:00:55.11
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 2000,  r =  0,    s = 30,    L = 1200,    k = 1200
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    4.65
+p-value of test                       :    0.20
+
+-----------------------------------------------
+CPU time used                    :  00:01:01.79
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 2000,  r = 20,    s = 10,    L = 1200,    k = 1200
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    6.39
+p-value of test                       :    0.09
+
+-----------------------------------------------
+CPU time used                    :  00:01:14.56
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_Savir2 test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,    m = 1048576,    t = 30
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   17
+Chi-square statistic                  :   15.25
+p-value of test                       :    0.58
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.51
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   s = 30
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 2465
+Chi2 statistic for GCD values         : 2390.42
+p-value of test                       :    0.86
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:24.09
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 10,   s = 20
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1559
+Chi2 statistic for GCD values         : 1538.20
+p-value of test                       :    0.64
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.00
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   s = 30,   L0 =   90,   L1 =   90
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   46
+ChiSquare statistic                   :   27.73
+p-value of test                       :    0.98
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   47
+ChiSquare statistic                   :   56.92
+p-value of test                       :    0.15
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   31.49
+p-value of test                       :    0.94
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   36
+ChiSquare statistic                   :   27.97
+p-value of test                       :    0.83
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   23
+ChiSquare statistic                   :   29.39
+p-value of test                       :    0.17
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:35.52
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L0 =   90,   L1 =   90
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   44
+ChiSquare statistic                   :   37.81
+p-value of test                       :    0.73
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   53.05
+p-value of test                       :    0.19
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   36.74
+p-value of test                       :    0.80
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   35
+ChiSquare statistic                   :   42.25
+p-value of test                       :    0.19
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   22
+ChiSquare statistic                   :   28.86
+p-value of test                       :    0.15
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.43
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   s = 30,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  140
+ChiSquare statistic                   :  146.20
+p-value of test                       :    0.34
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  141
+ChiSquare statistic                   :  141.82
+p-value of test                       :    0.46
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  469.98
+p-value of test                       :    0.83
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  132
+ChiSquare statistic                   :  157.89
+p-value of test                       :    0.06
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   72
+ChiSquare statistic                   :   82.02
+p-value of test                       :    0.20
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:30.80
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,   s = 10,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  128
+ChiSquare statistic                   :  156.55
+p-value of test                       :    0.04
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  130
+ChiSquare statistic                   :  107.00
+p-value of test                       :    0.93
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  467.14
+p-value of test                       :    0.85
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  122
+ChiSquare statistic                   :  120.76
+p-value of test                       :    0.51
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   66
+ChiSquare statistic                   :   70.12
+p-value of test                       :    0.34
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.39
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 500000,  r =  0,   s = 30,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  366
+ChiSquare statistic                   :  380.93
+p-value of test                       :    0.28
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  366
+ChiSquare statistic                   :  343.11
+p-value of test                       :    0.80
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 5047.09
+p-value of test                       :    0.32
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  360
+ChiSquare statistic                   :  352.40
+p-value of test                       :    0.60
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  192
+ChiSquare statistic                   :  198.14
+p-value of test                       :    0.37
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:27.85
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 100000,  r = 20,   s = 10,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  318
+ChiSquare statistic                   :  302.10
+p-value of test                       :    0.73
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  318
+ChiSquare statistic                   :  262.10
+p-value of test                       :    0.9902
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 5151.46
+p-value of test                       :    0.07
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  315
+ChiSquare statistic                   :  259.77
+p-value of test                       :    0.99
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  169
+ChiSquare statistic                   :  197.84
+p-value of test                       :    0.06
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.75
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 120000,  r =  0,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   10
+Chi2 statistic for size of jumps      :    6.57
+p-value of test                       :    0.76
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :    1.56
+p-value of test                       :    0.06
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.05
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 120000,  r = 29,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   10
+Chi2 statistic for size of jumps      :    8.63
+p-value of test                       :    0.57
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :   -1.32
+p-value of test                       :    0.91
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.95
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+scomp_LempelZiv test:
+-----------------------------------------------
+   N = 10,  n = 33554432,  r =  0,   s =   30,   k =   25
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.34
+p-value of test                       :    0.07
+
+Kolmogorov-Smirnov- statistic = D-    :   0.051
+p-value of test                       :    0.92
+
+Anderson-Darling statistic = A2       :    1.59
+p-value of test                       :    0.16
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -1.42
+p-value of test                       :    0.92
+
+Sample variance                       :    1.16
+p-value of test                       :    0.31
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.64
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 50000,  n = 16384,  r =  0,   s =   30,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 8.75e-3
+p-value of test                       :    0.53
+
+Kolmogorov-Smirnov- statistic = D-    : 5.48e-3
+p-value of test                       :    0.78
+
+Anderson-Darling statistic = A2       :    0.24
+p-value of test                       :    0.97
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.00
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 50000,  n = 16384,  r = 20,   s =   10,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 9.33e-3
+p-value of test                       :    0.49
+
+Kolmogorov-Smirnov- statistic = D-    : 4.88e-3
+p-value of test                       :    0.82
+
+Anderson-Darling statistic = A2       :    0.34
+p-value of test                       :    0.91
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.92
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 1000,  r =  0,   s = 30,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    8
+Chi-square statistic                  :    6.25
+p-value of test                       :    0.62
+
+-----------------------------------------------
+Global longest run of 1               :   37.00
+p-value of test                       :    0.04
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:56.69
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 300,  r = 20,   s = 10,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    7
+Chi-square statistic                  :    8.15
+p-value of test                       :    0.32
+
+-----------------------------------------------
+Global longest run of 1               :   28.00
+p-value of test                       :    0.94
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.31
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   s =   30
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  302
+Chi-square statistic                  :  295.69
+p-value of test                       :    0.59
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.67
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r = 15,   s =   15
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   56
+Chi-square statistic                  :   46.41
+p-value of test                       :    0.82
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.75
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 100,  n = 100000000,  r =  0,   s = 30,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.030
+p-value of test                       :    0.82
+
+Kolmogorov-Smirnov- statistic = D-    :   0.095
+p-value of test                       :    0.15
+
+Anderson-Darling statistic = A2       :    1.46
+p-value of test                       :    0.19
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 10000
+Chi-square statistic                  :10175.78
+p-value of test                       :    0.11
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.30
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 30,  n = 100000000,  r = 20,   s = 10,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.084
+p-value of test                       :    0.62
+
+Kolmogorov-Smirnov- statistic = D-    :    0.12
+p-value of test                       :    0.37
+
+Anderson-Darling statistic = A2       :    0.67
+p-value of test                       :    0.59
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 3000
+Chi-square statistic                  : 3029.17
+p-value of test                       :    0.35
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.41
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   s = 30,   L = 30
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.52
+p-value of test                       :    0.70
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.06
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   s = 30,   L = 300
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -1.27
+p-value of test                       :    0.90
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.60
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 30,   L = 1200
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -2.26
+p-value of test                       :    0.99
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.16
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   s = 30,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  577
+Chi-square statistic                  :  568.14
+p-value of test                       :    0.60
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.99
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 20,   s = 10,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  533
+Chi-square statistic                  :  520.48
+p-value of test                       :    0.64
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.42
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 30000000,  r =  0,   s = 30,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 4117
+Chi-square statistic                  : 4045.22
+p-value of test                       :    0.78
+
+-----------------------------------------------
+CPU time used                    :  00:00:20.98
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 3585
+Chi-square statistic                  : 3574.56
+p-value of test                       :    0.55
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.15
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 30,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 11825
+Chi-square statistic                  :11895.63
+p-value of test                       :    0.32
+
+-----------------------------------------------
+CPU time used                    :  00:00:27.40
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,   s = 10,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 7473
+Chi-square statistic                  : 7480.81
+p-value of test                       :    0.47
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.05
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  0,   s =   30
+
+
+-----------------------------------------------
+Total number of 1 runs:  1000000003
+
+Number of degrees of freedom          :   52
+Chi2 statistic for number of runs     :   51.55
+p-value of test                       :    0.49
+
+
+-----------------------------------------------
+Total number of bits:  4000054020
+
+Normal statistic for number of bits   :    0.60
+p-value of test                       :    0.27
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.32
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r = 20,   s =   10
+
+
+-----------------------------------------------
+Total number of 1 runs:  1000000001
+
+Number of degrees of freedom          :   52
+Chi2 statistic for number of runs     :   59.56
+p-value of test                       :    0.22
+
+
+-----------------------------------------------
+Total number of bits:  4000003600
+
+Normal statistic for number of bits   :   0.040
+p-value of test                       :    0.48
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.44
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000021,  r =  0,   s = 30,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.054
+p-value of test                       :    0.91
+
+Kolmogorov-Smirnov- statistic = D-    :    0.38
+p-value of test                       :    0.04
+
+Anderson-Darling statistic = A2       :    1.63
+p-value of test                       :    0.15
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    1.35
+p-value of test                       :    0.09
+
+Sample variance                       :    0.60
+p-value of test                       :    0.80
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.73
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N =  5,  n = 1000000001,  r = 20,   s = 10,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.061
+p-value of test                       :    0.92
+
+Kolmogorov-Smirnov- statistic = D-    :    0.45
+p-value of test                       :    0.10
+
+Anderson-Darling statistic = A2       :    1.94
+p-value of test                       :    0.10
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    1.73
+p-value of test                       :    0.04
+
+Sample variance                       :    0.69
+p-value of test                       :    0.60
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.57
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000020,  r =  0,   s = 30,   d = 30
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.18
+p-value of test                       :    0.49
+
+Kolmogorov-Smirnov- statistic = D-    :    0.19
+p-value of test                       :    0.44
+
+Anderson-Darling statistic = A2       :    0.85
+p-value of test                       :    0.45
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    0.48
+p-value of test                       :    0.31
+
+Sample variance                       :    1.85
+p-value of test                       :    0.06
+
+-----------------------------------------------
+CPU time used                    :  00:00:20.40
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N =  5,  n = 1000000010,  r = 20,   s = 10,   d = 10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.45
+p-value of test                       :    0.10
+
+Kolmogorov-Smirnov- statistic = D-    :   0.094
+p-value of test                       :    0.87
+
+Anderson-Darling statistic = A2       :    1.23
+p-value of test                       :    0.25
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -1.20
+p-value of test                       :    0.88
+
+Sample variance                       :    0.43
+p-value of test                       :    0.79
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.46
+
+Generator state:
+
+
+
+
+
+========= Summary results of Crush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        xorshift
+ Number of statistics:  144
+ Total CPU time:   00:37:26.42
+
+ All tests were passed
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting BigCrush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  0,   d =  256,   t =  3,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   59.604645
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =   0.0083558402,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16711680
+Value of the statistic                : 1.67e+7
+p-value of test                       :    0.31
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:59.09
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r = 22,   d =  256,   t =  3,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   59.604645
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =   0.0083558402,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16711680
+Value of the statistic                : 1.67e+7
+p-value of test                       :    0.34
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:04.00
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  0,   d = 2097152,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1358
+p-value of test                       :    0.56
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334478
+  j =  1                              :        599997284
+  j =  2                              :             1358
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:03:47.92
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  9,   d = 2097152,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1348
+p-value of test                       :    0.66
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334468
+  j =  1                              :        599997304
+  j =  2                              :             1348
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:03:49.57
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  0,   d = 16384,   t =  3,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1371
+p-value of test                       :    0.43
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334491
+  j =  1                              :        599997258
+  j =  2                              :             1371
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:04:43.46
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r = 16,   d = 16384,   t =  3,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1372
+p-value of test                       :    0.42
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334492
+  j =  1                              :        599997256
+  j =  2                              :             1372
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:04:48.15
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  0,   d =   64,   t =  7,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1339
+p-value of test                       :    0.75
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334459
+  j =  1                              :        599997322
+  j =  2                              :             1339
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:04:48.25
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r = 24,   d =   64,   t =  7,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1396
+p-value of test                       :    0.20
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334516
+  j =  1                              :        599997208
+  j =  2                              :             1396
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:04:53.14
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  0,   d =    8,   t = 14,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1359
+p-value of test                       :    0.55
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334479
+  j =  1                              :        599997282
+  j =  2                              :             1359
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:04:47.43
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r = 27,   d =    8,   t = 14,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1382
+p-value of test                       :    0.32
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334502
+  j =  1                              :        599997236
+  j =  2                              :             1382
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:04:52.13
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  0,   d =    4,   t = 21,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1454
+p-value of test                       :  8.3e-3
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334574
+  j =  1                              :        599997092
+  j =  2                              :             1454
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:04:46.27
+
+Generator state:
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r = 28,   d =    4,   t = 21,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1287
+p-value of test                       :    0.98
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334407
+  j =  1                              :        599997426
+  j =  2                              :             1287
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:04:50.97
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 100,  n = 10000000,  r =  0,    d = 2147483648,    t = 2,    p = 1
+
+
+      Number of cells = d^t = 4611686018427387904
+      Lambda = Poisson mean =      54.2101
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    5421.01
+Total observed number                 :    5379
+p-value of test                       :    0.71
+
+
+-----------------------------------------------
+CPU time used                    :  00:05:02.42
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r =  0,    d = 2097152,    t = 3,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    4336.81
+Total observed number                 :    4294
+p-value of test                       :    0.74
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:10.22
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 30000000,  r = 14,    d = 65536,    t = 4,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     365.9182
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    7318.36
+Total observed number                 :    7355
+p-value of test                       :    0.34
+
+
+-----------------------------------------------
+CPU time used                    :  00:03:36.36
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r =  0,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    4336.81
+Total observed number                 :    4376
+p-value of test                       :    0.28
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:30.39
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r =  7,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    4336.81
+Total observed number                 :    4354
+p-value of test                       :    0.40
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:42.25
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 30000000,  r = 14,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     365.9182
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    7318.36
+Total observed number                 :    7069
+p-value of test                       :    0.9983
+
+
+-----------------------------------------------
+CPU time used                    :  00:04:16.94
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 30000000,  r = 22,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     365.9182
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    7318.36
+Total observed number                 :    7350
+p-value of test                       :    0.36
+
+
+-----------------------------------------------
+CPU time used                    :  00:04:16.71
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 30000000,  r =  0,    d = 16,    t = 16,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     365.9182
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    7318.36
+Total observed number                 :    7148
+p-value of test                       :    0.98
+
+
+-----------------------------------------------
+CPU time used                    :  00:04:58.89
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 30000000,  r = 26,    d = 16,    t = 16,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     365.9182
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    7318.36
+Total observed number                 :    7473
+p-value of test                       :    0.04
+
+
+-----------------------------------------------
+CPU time used                    :  00:05:38.57
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 30,  n = 6000000,  r =  0,  t = 3,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.30
+p-value of test                       :    0.94
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    0.63
+p-value of test                       :    0.62
+
+Test on the Nm values of W_{n,i}(mNP1):    1.12
+p-value of test                       :    0.30
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     900
+Number of jumps of Y                  :     898
+p-value of test                       :    0.52
+
+Stat. AD (mNP2)                       :    0.16
+p-value of test                       :    0.9980
+
+Stat. AD after spacings (mNP2-S)      :    3.40
+p-value of test                       :    0.02
+
+-----------------------------------------------
+CPU time used                    :  00:03:20.19
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 20,  n = 4000000,  r =  0,  t = 5,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.78
+p-value of test                       :    0.49
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    0.63
+p-value of test                       :    0.62
+
+Test on the Nm values of W_{n,i}(mNP1):    1.45
+p-value of test                       :    0.19
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     600
+Number of jumps of Y                  :     579
+p-value of test                       :    0.80
+
+Stat. AD (mNP2)                       :    1.98
+p-value of test                       :    0.09
+
+Stat. AD after spacings (mNP2-S)      :    0.80
+p-value of test                       :    0.48
+
+-----------------------------------------------
+CPU time used                    :  00:02:15.22
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 3000000,  r =  0,  t = 9,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    1.35
+p-value of test                       :    0.22
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    1.02
+p-value of test                       :    0.35
+
+Test on the Nm values of W_{n,i}(mNP1):    1.03
+p-value of test                       :    0.34
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :     325
+p-value of test                       :    0.08
+
+Stat. AD (mNP2)                       :    0.80
+p-value of test                       :    0.48
+
+Stat. AD after spacings (mNP2-S)      :    0.72
+p-value of test                       :    0.54
+
+-----------------------------------------------
+CPU time used                    :  00:03:30.81
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N =  5,  n = 2000000,  r =  0,  t = 16,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.94
+p-value of test                       :    0.38
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    1.07
+p-value of test                       :    0.32
+
+Test on the Nm values of W_{n,i}(mNP1):    0.71
+p-value of test                       :    0.55
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     150
+Number of jumps of Y                  :     160
+p-value of test                       :    0.22
+
+Stat. AD (mNP2)                       :    0.40
+p-value of test                       :    0.85
+
+Stat. AD after spacings (mNP2-S)      :    0.35
+p-value of test                       :    0.90
+
+-----------------------------------------------
+CPU time used                    :  00:03:45.25
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 400000000,  r =  0,   d =    8,   k =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    7
+Chi-square statistic                  :    6.92
+p-value of test                       :    0.44
+
+-----------------------------------------------
+CPU time used                    :  00:01:10.70
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 400000000,  r = 27,   d =    8,   k =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    7
+Chi-square statistic                  :   10.36
+p-value of test                       :    0.17
+
+-----------------------------------------------
+CPU time used                    :  00:01:26.40
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   d =   32,   k =   32
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   18
+Chi-square statistic                  :   10.64
+p-value of test                       :    0.91
+
+-----------------------------------------------
+CPU time used                    :  00:01:06.51
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 25,   d =   32,   k =   32
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   18
+Chi-square statistic                  :   13.44
+p-value of test                       :    0.76
+
+-----------------------------------------------
+CPU time used                    :  00:01:18.26
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 200000000,  r =  0,   d =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   54
+Chi-square statistic                  :   59.08
+p-value of test                       :    0.30
+
+-----------------------------------------------
+CPU time used                    :  00:01:24.07
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 200000000,  r = 10,   d =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   54
+Chi-square statistic                  :   50.25
+p-value of test                       :    0.62
+
+-----------------------------------------------
+CPU time used                    :  00:01:41.37
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 200000000,  r = 20,   d =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   54
+Chi-square statistic                  :   66.89
+p-value of test                       :    0.11
+
+-----------------------------------------------
+CPU time used                    :  00:01:41.36
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 200000000,  r = 27,   d =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   54
+Chi-square statistic                  :   55.81
+p-value of test                       :    0.41
+
+-----------------------------------------------
+CPU time used                    :  00:01:41.37
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   Alpha =        0,   Beta  =   0.0625
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  232
+Chi-square statistic                  :  280.17
+p-value of test                       :    0.02
+
+-----------------------------------------------
+CPU time used                    :  00:01:28.22
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r = 25,   Alpha =        0,   Beta  =  0.03125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  434
+Chi-square statistic                  :  509.99
+p-value of test                       :  6.9e-3
+
+-----------------------------------------------
+CPU time used                    :  00:02:20.70
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   Alpha =        0,   Beta  = 0.0078125
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1437
+Chi-square statistic                  : 1362.74
+p-value of test                       :    0.92
+
+-----------------------------------------------
+CPU time used                    :  00:02:05.93
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   Alpha =        0,   Beta  = 0.000976562
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 7046
+Chi-square statistic                  : 6960.48
+p-value of test                       :    0.76
+
+-----------------------------------------------
+CPU time used                    :  00:02:24.25
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  5,  n = 1000000000,  r =  0,   Up = FALSE
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.049
+p-value of test                       :    0.94
+
+Kolmogorov-Smirnov- statistic = D-    :    0.37
+p-value of test                       :    0.20
+
+Anderson-Darling statistic = A2       :    1.28
+p-value of test                       :    0.24
+
+Test on the sum of all N observations
+Number of degrees of freedom          :   30
+Chi-square statistic                  :   41.07
+p-value of test                       :    0.09
+
+-----------------------------------------------
+CPU time used                    :  00:01:20.45
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N = 10,  n = 1000000000,  r = 15,   Up =  TRUE
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.099
+p-value of test                       :    0.77
+
+Kolmogorov-Smirnov- statistic = D-    :    0.17
+p-value of test                       :    0.52
+
+Anderson-Darling statistic = A2       :    0.27
+p-value of test                       :    0.96
+
+Test on the sum of all N observations
+Number of degrees of freedom          :   60
+Chi-square statistic                  :   63.47
+p-value of test                       :    0.36
+
+-----------------------------------------------
+CPU time used                    :  00:03:19.20
+
+Generator state:
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  5,   t =  3,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =                  6
+       Expected number per cell =  1.6666667e+08
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =  2.5000002e-09,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          :    5
+Value of the statistic                :    6.92
+p-value of test                       :    0.23
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:05.45
+
+Generator state:
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  5,   t =  5,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =                120
+       Expected number per cell =   8333333.3
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =  5.9500005e-08,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          :  119
+Value of the statistic                :  116.75
+p-value of test                       :    0.54
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:15.86
+
+Generator state:
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  5,   t =  7,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =               5040
+       Expected number per cell =   99206.349
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =  5.0390004e-06,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 5039
+Value of the statistic                : 5138.68
+p-value of test                       :    0.16
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:57.20
+
+Generator state:
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r = 10,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    137.7866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =   0.0036287993,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                : 3.63e+6
+p-value of test                       :    0.18
+
+
+-----------------------------------------------
+CPU time used                    :  00:03:53.78
+
+Generator state:
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r =  0,   t = 14,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =        87178291200
+       Expected number per cell =  1 /  4358.9146
+       EColl = n^2 / (2k) =   2294.14912
+       Hashing =   TRUE
+
+       Collision test,    Mu =      2293.9736,    Sigma =    47.8841
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    45879.47
+Observed number of collisions         :    46278
+p-value of test                       :    0.03
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :    1743165870278
+  j =  1                              :        399907447
+  j =  2                              :            46272
+  j =  3                              :                3
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:05:16.51
+
+Generator state:
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r = 10,   t = 14,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =        87178291200
+       Expected number per cell =  1 /  4358.9146
+       EColl = n^2 / (2k) =   2294.14912
+       Hashing =   TRUE
+
+       Collision test,    Mu =      2293.9736,    Sigma =    47.8841
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    45879.47
+Observed number of collisions         :    46149
+p-value of test                       :    0.10
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :    1743165870149
+  j =  1                              :        399907705
+  j =  2                              :            46143
+  j =  3                              :                3
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:05:36.95
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 40,  n = 10000000,  r =  0,   d = 100000,   t =  8
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.038
+p-value of test                       :    0.87
+
+Kolmogorov-Smirnov- statistic = D-    :    0.12
+p-value of test                       :    0.27
+
+Anderson-Darling statistic = A2       :    0.94
+p-value of test                       :    0.39
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 3999960
+Chi-square statistic                  : 4.00e+6
+p-value of test                       :    0.16
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.061
+p-value of test                       :    0.71
+
+Kolmogorov-Smirnov- statistic = D-    :    0.14
+p-value of test                       :    0.18
+
+Anderson-Darling statistic = A2       :    0.57
+p-value of test                       :    0.67
+
+
+-----------------------------------------------
+CPU time used                    :  00:04:13.21
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 30,  n = 10000000,  r =  0,   d = 100000,   t = 16
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.24
+p-value of test                       :    0.03
+
+Kolmogorov-Smirnov- statistic = D-    :   0.015
+p-value of test                       :    0.98
+
+Anderson-Darling statistic = A2       :    1.90
+p-value of test                       :    0.10
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 2999970
+Chi-square statistic                  : 3.00e+6
+p-value of test                       :    0.96
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.14
+p-value of test                       :    0.26
+
+Kolmogorov-Smirnov- statistic = D-    :    0.12
+p-value of test                       :    0.37
+
+Anderson-Darling statistic = A2       :    0.85
+p-value of test                       :    0.45
+
+
+-----------------------------------------------
+CPU time used                    :  00:03:32.28
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   d = 100000,   t = 24
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.090
+p-value of test                       :    0.68
+
+Kolmogorov-Smirnov- statistic = D-    :    0.18
+p-value of test                       :    0.25
+
+Anderson-Darling statistic = A2       :    0.95
+p-value of test                       :    0.38
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 1999980
+Chi-square statistic                  : 2.00e+6
+p-value of test                       :    0.17
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.044
+p-value of test                       :    0.90
+
+Kolmogorov-Smirnov- statistic = D-    :    0.32
+p-value of test                       :    0.01
+
+Anderson-Darling statistic = A2       :    1.91
+p-value of test                       :    0.10
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:36.25
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   d = 100000,   t = 32
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.34
+p-value of test                       :  8.2e-3
+
+Kolmogorov-Smirnov- statistic = D-    :   0.032
+p-value of test                       :    0.94
+
+Anderson-Darling statistic = A2       :    3.54
+p-value of test                       :    0.01
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 1999980
+Chi-square statistic                  : 2.00e+6
+p-value of test                       :    0.9910
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.037
+p-value of test                       :    0.92
+
+Kolmogorov-Smirnov- statistic = D-    :    0.21
+p-value of test                       :    0.15
+
+Anderson-Darling statistic = A2       :    1.74
+p-value of test                       :    0.13
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:50.95
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N = 40,  n = 10000000,  r =  0,   t = 8
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.022
+p-value of test                       :    0.95
+
+Kolmogorov-Smirnov- statistic = D-    :   0.097
+p-value of test                       :    0.44
+
+Anderson-Darling statistic = A2       :    0.21
+p-value of test                       :    0.99
+
+-----------------------------------------------
+CPU time used                    :  00:02:28.14
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   t = 16
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.17
+p-value of test                       :    0.28
+
+Kolmogorov-Smirnov- statistic = D-    :   0.077
+p-value of test                       :    0.75
+
+Anderson-Darling statistic = A2       :    0.54
+p-value of test                       :    0.70
+
+-----------------------------------------------
+CPU time used                    :  00:01:47.79
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   t = 24
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.16
+p-value of test                       :    0.34
+
+Kolmogorov-Smirnov- statistic = D-    :    0.12
+p-value of test                       :    0.52
+
+Anderson-Darling statistic = A2       :    0.75
+p-value of test                       :    0.52
+
+-----------------------------------------------
+CPU time used                    :  00:02:21.57
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SampleMean test:
+-----------------------------------------------
+   N = 20000000,  n = 30,  r =  0
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 1.11e-4
+p-value of test                       :    0.61
+
+Kolmogorov-Smirnov- statistic = D-    : 2.85e-4
+p-value of test                       :    0.04
+
+Anderson-Darling statistic = A2       :    2.35
+p-value of test                       :    0.06
+
+-----------------------------------------------
+CPU time used                    :  00:00:57.79
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SampleMean test:
+-----------------------------------------------
+   N = 20000000,  n = 30,  r = 10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 4.26e-5
+p-value of test                       :    0.93
+
+Kolmogorov-Smirnov- statistic = D-    : 2.51e-4
+p-value of test                       :    0.08
+
+Anderson-Darling statistic = A2       :    1.51
+p-value of test                       :    0.17
+
+-----------------------------------------------
+CPU time used                    :  00:00:59.90
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SampleCorr test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r =  0,   k = 1
+
+
+-----------------------------------------------
+Normal statistic                      :    0.71
+p-value of test                       :    0.24
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.06
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SampleCorr test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r =  0,   k = 2
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.14
+p-value of test                       :    0.56
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.09
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 1000000000,   r = 0,   s = 3,   L = 15
+
+   Sequences of n = (K + Q)L =  15150000000 bits
+   Q = 10000000 initialization blocks
+   K = 1000000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :    0.25
+p-value of test                       :    0.40
+
+-----------------------------------------------
+CPU time used                    :  00:01:36.70
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 1000000000,   r = 27,   s = 3,   L = 15
+
+   Sequences of n = (K + Q)L =  15150000000 bits
+   Q = 10000000 initialization blocks
+   K = 1000000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.58
+p-value of test                       :    0.72
+
+-----------------------------------------------
+CPU time used                    :  00:01:39.42
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,  k = 256,  Alpha =      0,  Beta =   0.25
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   67
+Chi-square statistic                  :   50.36
+p-value of test                       :    0.94
+
+-----------------------------------------------
+CPU time used                    :  00:00:50.20
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r = 20,  k = 256,  Alpha =      0,  Beta =   0.25
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   67
+Chi-square statistic                  :   62.78
+p-value of test                       :    0.62
+
+-----------------------------------------------
+CPU time used                    :  00:01:12.39
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r = 28,  k = 256,  Alpha =      0,  Beta =   0.25
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   67
+Chi-square statistic                  :   80.82
+p-value of test                       :    0.12
+
+-----------------------------------------------
+CPU time used                    :  00:01:12.45
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,  k = 256,  Alpha =      0,  Beta = 0.0625
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   37
+Chi-square statistic                  :   31.07
+p-value of test                       :    0.74
+
+-----------------------------------------------
+CPU time used                    :  00:00:50.20
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r = 10,  k = 256,  Alpha =      0,  Beta = 0.0625
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   37
+Chi-square statistic                  :   39.04
+p-value of test                       :    0.38
+
+-----------------------------------------------
+CPU time used                    :  00:01:12.42
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r = 26,  k = 256,  Alpha =      0,  Beta = 0.0625
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   37
+Chi-square statistic                  :   41.68
+p-value of test                       :    0.27
+
+-----------------------------------------------
+CPU time used                    :  00:01:12.45
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+svaria_SumCollector test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   g = 10
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   29
+Chi-square statistic                  :   21.89
+p-value of test                       :    0.82
+
+-----------------------------------------------
+CPU time used                    :  00:01:48.44
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N = 10,  n = 1000000,  r =  0,    s = 5,    L = 30,    k = 30
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.051
+p-value of test                       :    0.92
+
+Kolmogorov-Smirnov- statistic = D-    :    0.24
+p-value of test                       :    0.28
+
+Anderson-Darling statistic = A2       :    0.81
+p-value of test                       :    0.47
+
+Test on the sum of all N observations
+Number of degrees of freedom          :   40
+Chi-square statistic                  :   47.07
+p-value of test                       :    0.21
+
+-----------------------------------------------
+CPU time used                    :  00:01:26.09
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N = 10,  n = 1000000,  r = 25,    s = 5,    L = 30,    k = 30
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.067
+p-value of test                       :    0.88
+
+Kolmogorov-Smirnov- statistic = D-    :    0.27
+p-value of test                       :    0.19
+
+Anderson-Darling statistic = A2       :    0.73
+p-value of test                       :    0.53
+
+Test on the sum of all N observations
+Number of degrees of freedom          :   40
+Chi-square statistic                  :   47.22
+p-value of test                       :    0.20
+
+-----------------------------------------------
+CPU time used                    :  00:01:26.12
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 5000,  r =  0,    s = 4,    L = 1000,    k = 1000
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    0.25
+p-value of test                       :    0.97
+
+-----------------------------------------------
+CPU time used                    :  00:02:40.69
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 5000,  r = 26,    s = 4,    L = 1000,    k = 1000
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    1.55
+p-value of test                       :    0.67
+
+-----------------------------------------------
+CPU time used                    :  00:02:41.37
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 80,  r = 15,    s = 15,    L = 5000,    k = 5000
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    2
+Chi-square statistic                  :    0.32
+p-value of test                       :    0.85
+
+-----------------------------------------------
+CPU time used                    :  00:05:21.77
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 80,  r =  0,    s = 30,    L = 5000,    k = 5000
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    2
+Chi-square statistic                  :   0.075
+p-value of test                       :    0.96
+
+-----------------------------------------------
+CPU time used                    :  00:05:09.84
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_Savir2 test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 10,    m = 1048576,    t = 30
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.17
+p-value of test                       :    0.50
+
+Kolmogorov-Smirnov- statistic = D-    :   0.054
+p-value of test                       :    0.91
+
+Anderson-Darling statistic = A2       :    0.45
+p-value of test                       :    0.79
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  130
+Chi-square statistic                  :  119.12
+p-value of test                       :    0.74
+
+-----------------------------------------------
+CPU time used                    :  00:00:43.85
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N = 10,  n = 50000000,  r =  0,   s = 30
+
+
+-----------------------------------------------
+Test results for GCD values:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.10
+p-value of test                       :    0.75
+
+Kolmogorov-Smirnov- statistic = D-    :    0.27
+p-value of test                       :    0.20
+
+Anderson-Darling statistic = A2       :    1.07
+p-value of test                       :    0.32
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 17430
+Chi-square statistic                  :17375.96
+p-value of test                       :    0.61
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:00.53
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   s = 5,   L0 =   50,   L1 =   50
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   36
+ChiSquare statistic                   :   47.70
+p-value of test                       :    0.09
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   35
+ChiSquare statistic                   :   41.36
+p-value of test                       :    0.21
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   25
+ChiSquare statistic                   :   20.98
+p-value of test                       :    0.69
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   24
+ChiSquare statistic                   :   38.41
+p-value of test                       :    0.03
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   17
+ChiSquare statistic                   :   13.39
+p-value of test                       :    0.71
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:01.96
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 25,   s = 5,   L0 =   50,   L1 =   50
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   36
+ChiSquare statistic                   :   30.31
+p-value of test                       :    0.74
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   35
+ChiSquare statistic                   :   15.21
+p-value of test                       :    0.9985
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   25
+ChiSquare statistic                   :   15.64
+p-value of test                       :    0.93
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   24
+ChiSquare statistic                   :   15.66
+p-value of test                       :    0.90
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   17
+ChiSquare statistic                   :   16.68
+p-value of test                       :    0.48
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:03.36
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 10,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  146
+ChiSquare statistic                   :  151.44
+p-value of test                       :    0.36
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  146
+ChiSquare statistic                   :  110.07
+p-value of test                       :    0.99
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  529.06
+p-value of test                       :    0.18
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  136
+ChiSquare statistic                   :  127.97
+p-value of test                       :    0.68
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   74
+ChiSquare statistic                   :   72.05
+p-value of test                       :    0.54
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:14.01
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  146
+ChiSquare statistic                   :  158.47
+p-value of test                       :    0.23
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  146
+ChiSquare statistic                   :  142.39
+p-value of test                       :    0.57
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  521.75
+p-value of test                       :    0.24
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  136
+ChiSquare statistic                   :  125.12
+p-value of test                       :    0.74
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   74
+ChiSquare statistic                   :  101.79
+p-value of test                       :    0.02
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:14.01
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r =  0,   s = 15,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  384
+ChiSquare statistic                   :  368.86
+p-value of test                       :    0.70
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  384
+ChiSquare statistic                   :  438.26
+p-value of test                       :    0.03
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 5108.61
+p-value of test                       :    0.14
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  378
+ChiSquare statistic                   :  385.64
+p-value of test                       :    0.38
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  200
+ChiSquare statistic                   :  209.74
+p-value of test                       :    0.30
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:01.50
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 15,   s = 15,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  384
+ChiSquare statistic                   :  366.30
+p-value of test                       :    0.73
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  384
+ChiSquare statistic                   :  340.19
+p-value of test                       :    0.95
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 4982.06
+p-value of test                       :    0.57
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  378
+ChiSquare statistic                   :  352.27
+p-value of test                       :    0.82
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  200
+ChiSquare statistic                   :  157.61
+p-value of test                       :    0.99
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:02.10
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 400020,  r =  0,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi2 statistic for size of jumps      :   16.88
+p-value of test                       :    0.15
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :   -1.68
+p-value of test                       :    0.95
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:46.84
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 400020,  r = 29,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi2 statistic for size of jumps      :   11.30
+p-value of test                       :    0.50
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :    1.51
+p-value of test                       :    0.07
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:49.97
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+scomp_LempelZiv test:
+-----------------------------------------------
+   N = 10,  n = 134217728,  r =  0,   s =   30,   k =   27
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.29
+p-value of test                       :    0.15
+
+Kolmogorov-Smirnov- statistic = D-    :    0.13
+p-value of test                       :    0.65
+
+Anderson-Darling statistic = A2       :    1.05
+p-value of test                       :    0.33
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -0.77
+p-value of test                       :    0.78
+
+Sample variance                       :    0.33
+p-value of test                       :    0.96
+
+-----------------------------------------------
+CPU time used                    :  00:01:30.80
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+scomp_LempelZiv test:
+-----------------------------------------------
+   N = 10,  n = 134217728,  r = 15,   s =   15,   k =   27
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.26
+p-value of test                       :    0.22
+
+Kolmogorov-Smirnov- statistic = D-    :    0.12
+p-value of test                       :    0.69
+
+Anderson-Darling statistic = A2       :    0.39
+p-value of test                       :    0.85
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -0.13
+p-value of test                       :    0.55
+
+Sample variance                       :    0.80
+p-value of test                       :    0.62
+
+-----------------------------------------------
+CPU time used                    :  00:01:34.70
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 100000,  n = 16384,  r =  0,   s =    3,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.011
+p-value of test                       :    0.34
+
+Kolmogorov-Smirnov- statistic = D-    : 5.26e-3
+p-value of test                       :    0.79
+
+Anderson-Darling statistic = A2       :    0.40
+p-value of test                       :    0.85
+
+-----------------------------------------------
+CPU time used                    :  00:01:06.28
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 100000,  n = 16384,  r = 27,   s =    3,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.013
+p-value of test                       :    0.26
+
+Kolmogorov-Smirnov- statistic = D-    : 8.32e-3
+p-value of test                       :    0.56
+
+Anderson-Darling statistic = A2       :    0.96
+p-value of test                       :    0.38
+
+-----------------------------------------------
+CPU time used                    :  00:01:04.97
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 1000,  r =  0,   s = 3,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    8
+Chi-square statistic                  :   18.77
+p-value of test                       :    0.02
+
+-----------------------------------------------
+Global longest run of 1               :   31.00
+p-value of test                       :    0.69
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:35.43
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 1000,  r = 27,   s = 3,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    8
+Chi-square statistic                  :    7.48
+p-value of test                       :    0.49
+
+-----------------------------------------------
+Global longest run of 1               :   31.00
+p-value of test                       :    0.69
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:36.30
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N = 10,  n = 500000000,  r =  0,   s =   10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.33
+p-value of test                       :    0.10
+
+Kolmogorov-Smirnov- statistic = D-    :    0.10
+p-value of test                       :    0.75
+
+Anderson-Darling statistic = A2       :    1.50
+p-value of test                       :    0.18
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  200
+Chi-square statistic                  :  171.50
+p-value of test                       :    0.93
+
+-----------------------------------------------
+CPU time used                    :  00:04:00.40
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N = 10,  n = 500000000,  r = 20,   s =   10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.19
+p-value of test                       :    0.44
+
+Kolmogorov-Smirnov- statistic = D-    :    0.22
+p-value of test                       :    0.33
+
+Anderson-Darling statistic = A2       :    0.63
+p-value of test                       :    0.61
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  200
+Chi-square statistic                  :  210.52
+p-value of test                       :    0.29
+
+-----------------------------------------------
+CPU time used                    :  00:04:01.29
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 10,  n = 1000000000,  r =  0,   s = 3,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.21
+p-value of test                       :    0.36
+
+Kolmogorov-Smirnov- statistic = D-    :    0.13
+p-value of test                       :    0.66
+
+Anderson-Darling statistic = A2       :    0.57
+p-value of test                       :    0.67
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 10000
+Chi-square statistic                  : 9967.89
+p-value of test                       :    0.59
+
+-----------------------------------------------
+CPU time used                    :  00:01:02.96
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 10,  n = 1000000000,  r = 27,   s = 3,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.13
+p-value of test                       :    0.66
+
+Kolmogorov-Smirnov- statistic = D-    :    0.22
+p-value of test                       :    0.32
+
+Anderson-Darling statistic = A2       :    0.48
+p-value of test                       :    0.76
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 10000
+Chi-square statistic                  :10064.84
+p-value of test                       :    0.32
+
+-----------------------------------------------
+CPU time used                    :  00:01:04.77
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r = 10,   s = 10,   L = 30
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.81
+p-value of test                       :    0.79
+
+-----------------------------------------------
+CPU time used                    :  00:01:24.02
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 10,   s = 10,   L = 300
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.21
+p-value of test                       :    0.58
+
+-----------------------------------------------
+CPU time used                    :  00:01:18.13
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 10,   s = 10,   L = 1200
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.69
+p-value of test                       :    0.75
+
+-----------------------------------------------
+CPU time used                    :  00:05:09.13
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N = 10,  n = 30000000,  r =  0,   s = 3,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.17
+p-value of test                       :    0.51
+
+Kolmogorov-Smirnov- statistic = D-    :    0.13
+p-value of test                       :    0.66
+
+Anderson-Darling statistic = A2       :    0.57
+p-value of test                       :    0.67
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 4890
+Chi-square statistic                  : 4923.70
+p-value of test                       :    0.36
+
+-----------------------------------------------
+CPU time used                    :  00:02:01.04
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N = 10,  n = 30000000,  r = 27,   s = 3,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.17
+p-value of test                       :    0.50
+
+Kolmogorov-Smirnov- statistic = D-    :    0.23
+p-value of test                       :    0.32
+
+Anderson-Darling statistic = A2       :    0.57
+p-value of test                       :    0.67
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 4890
+Chi-square statistic                  : 4951.86
+p-value of test                       :    0.26
+
+-----------------------------------------------
+CPU time used                    :  00:02:04.40
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 30000000,  r =  0,   s = 4,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 4117
+Chi-square statistic                  : 4223.35
+p-value of test                       :    0.12
+
+-----------------------------------------------
+CPU time used                    :  00:01:29.47
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 30000000,  r = 26,   s = 4,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 4117
+Chi-square statistic                  : 4181.75
+p-value of test                       :    0.24
+
+-----------------------------------------------
+CPU time used                    :  00:01:32.16
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 5,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 11825
+Chi-square statistic                  :12106.86
+p-value of test                       :    0.03
+
+-----------------------------------------------
+CPU time used                    :  00:01:39.93
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 25,   s = 5,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 11825
+Chi-square statistic                  :12298.65
+p-value of test                       :  1.2e-3
+
+-----------------------------------------------
+CPU time used                    :  00:01:43.25
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r =  0,   s =    3
+
+
+-----------------------------------------------
+Total number of 1 runs:  2000000000
+
+Number of degrees of freedom          :   54
+Chi2 statistic for number of runs     :   70.72
+p-value of test                       :    0.06
+
+
+-----------------------------------------------
+Total number of bits:  8000181243
+
+Normal statistic for number of bits   :    1.43
+p-value of test                       :    0.08
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:15.45
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r = 27,   s =    3
+
+
+-----------------------------------------------
+Total number of 1 runs:  2000000000
+
+Number of degrees of freedom          :   54
+Chi2 statistic for number of runs     :   54.72
+p-value of test                       :    0.45
+
+
+-----------------------------------------------
+Total number of bits:  8000095449
+
+Normal statistic for number of bits   :    0.75
+p-value of test                       :    0.23
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:18.91
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000030,  r =  0,   s = 3,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.52
+p-value of test                       :  2.2e-3
+
+Kolmogorov-Smirnov- statistic = D-    :   0.081
+p-value of test                       :    0.84
+
+Anderson-Darling statistic = A2       :    5.39
+p-value of test                       :  2.0e-3
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -2.80
+p-value of test                       :    0.9975
+
+Sample variance                       :    1.60
+p-value of test                       :    0.11
+
+-----------------------------------------------
+CPU time used                    :  00:02:57.97
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000029,  r =  0,   s = 3,   d = 3
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.35
+p-value of test                       :    0.07
+
+Kolmogorov-Smirnov- statistic = D-    :   0.073
+p-value of test                       :    0.86
+
+Anderson-Darling statistic = A2       :    1.74
+p-value of test                       :    0.13
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -1.42
+p-value of test                       :    0.92
+
+Sample variance                       :    0.61
+p-value of test                       :    0.79
+
+-----------------------------------------------
+CPU time used                    :  00:02:37.95
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000030,  r = 27,   s = 3,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 7.20e-3
+p-value of test                       :    0.9923
+
+Kolmogorov-Smirnov- statistic = D-    :    0.46
+p-value of test                       :    0.01
+
+Anderson-Darling statistic = A2       :    3.83
+p-value of test                       :    0.01
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    2.72
+p-value of test                       :  3.3e-3
+
+Sample variance                       :    0.78
+p-value of test                       :    0.63
+
+-----------------------------------------------
+CPU time used                    :  00:02:58.15
+
+Generator state:
+
+
+
+
+***********************************************************
+HOST = linux-9cge, Linux
+
+xorshift
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000029,  r = 27,   s = 3,   d = 3
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.21
+p-value of test                       :    0.36
+
+Kolmogorov-Smirnov- statistic = D-    :    0.12
+p-value of test                       :    0.70
+
+Anderson-Darling statistic = A2       :    0.64
+p-value of test                       :    0.61
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -0.55
+p-value of test                       :    0.71
+
+Sample variance                       :    0.45
+p-value of test                       :    0.91
+
+-----------------------------------------------
+CPU time used                    :  00:02:39.15
+
+Generator state:
+
+
+
+
+
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        xorshift
+ Number of statistics:  160
+ Total CPU time:   04:21:34.29
+
+ All tests were passed
+
+
