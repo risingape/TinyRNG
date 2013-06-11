@@ -20,7 +20,7 @@
 
   The design goals of TinyRNG are:
 
-  * keep it simple it simple and understandable,
+  * keep it simple and understandable,
   * simple and understandable algorithms,
   * references to all algorithms are available,
   * consistend call-by-reference interface for all functions, 
